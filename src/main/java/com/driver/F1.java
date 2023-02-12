@@ -7,6 +7,13 @@ public class F1 extends Car {
         setName(name);
         setManual(isManual);
         //Use arbitrary values for parameters which are not mentioned
+        setDoors(4);
+        setGears(5);
+        setWheels(4);
+        setType("Formula");
+        setCurrentSpeed(0);
+        setCurrentDirection(0);
+
     }
 
     public void accelerate(int rate){
