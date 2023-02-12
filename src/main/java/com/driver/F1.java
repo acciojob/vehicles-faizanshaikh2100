@@ -4,13 +4,13 @@ public class F1 extends Car {
 
     public F1(String name, boolean isManual) {
 
-        super(name,4,4,5,isManual,"Formula",4);
+        super(name,4,4,5,isManual,name,4);
 
     }
 
     public void accelerate(int rate){
-        int newSpeed = 0;
-        newSpeed = getCurrentSpeed()+rate;
+
+       int newSpeed = getCurrentSpeed()+rate;
         if(newSpeed >0 && newSpeed <=50){
             changeGear(1);
         }
